@@ -29,6 +29,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
           integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
     <style>
         body {
             font-family: 'Nunito', sans-serif;
@@ -39,11 +44,6 @@
         }
     </style>
     <link rel="stylesheet" href="/assets/css/style.css">
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
 </head>
 <body>
 <div class="clearfix"></div>
@@ -76,11 +76,11 @@
             <div class="extra-padding">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#skills" role="tab"
+                        <a class="nav-link active" id="skills-tab" data-toggle="tab" href="#skills" role="tab"
                            aria-controls="home" aria-selected="true">Tech Skills</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#experience" role="tab"
+                    <li class="nav-item experience-tab">
+                        <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab"
                            aria-controls="profile" aria-selected="false">Experience</a>
                     </li>
                     <li class="nav-item">
@@ -101,8 +101,8 @@
                                                   data-placement="right"
                                                   title="6 years">Python</span>
                                             <p>I have been using python for the last 6 years with Django and sometimes
-                                                Flask. In this language I love building APIs and use it for scripting,
-                                                web scraping, data analysis, AI studies and all the fun stuff it can
+                                                Flask. In this language I love building APIs and using it for scripting,
+                                                web scraping, data science, AI studies and all the fun stuff it can
                                                 provide. </p>
                                         </div>
                                     </div>
@@ -110,7 +110,7 @@
                                         <div class="col-sm-12">
                                             <span class="badge badge-primary" data-toggle="tooltip"
                                                   data-placement="right"
-                                                  title="7 years">PHP</span>
+                                                  title="5 years">PHP</span>
                                             <p>Despite python being my favorite language to build for the web, I have
                                                 been using PHP for most of my professional career. I like how PHP it's
                                                 fast for
@@ -122,28 +122,46 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="small-clearfix"></div>
                                 <h5>Frontend:</h5>
                                 <div>
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <p>The basics:
+                                            <p>
                                                 <span class="badge badge-info">HTML5</span>
                                                 <span class="badge badge-info">CSS3</span>
                                                 <span class="badge badge-info">Javascript</span>
                                                 <span class="badge badge-info">Bootstrap</span>
                                             </p>
-                                            <p>The extras:
+                                            <p>
                                                 <span class="badge badge-warning">SASS/SCSS</span>
-                                                <span class="badge badge-warning">Webpack/Gulp</span>
+                                                <span class="badge badge-warning">Webpack</span>
+                                                <span class="badge badge-warning">Gulp</span>
                                                 <span class="badge badge-warning">Bower</span>
                                                 <span class="badge badge-warning">VueJS</span>
                                                 <span class="badge badge-warning">Redux</span>
                                                 <span class="badge badge-warning">AngularJS 2</span>
+                                                <span class="badge badge-warning">Cordova</span>
                                                 <span class="badge badge-warning">d3.js</span>
                                             </p>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="small-clearfix"></div>
+                                <h5>Databases:</h5>
+                                <div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>
+                                                <span class="badge badge-danger">MySQL</span>
+                                                <span class="badge badge-danger">PostgreSQL</span>
+                                                <span class="badge badge-danger">Elasticsearch</span>
+                                                <span class="badge badge-danger">MariaDB</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="small-clearfix"></div>
                                 <h5>DevOps:</h5>
                                 <div>
                                     <div class="row">
@@ -163,7 +181,90 @@
                         <div class="small-clearfix"></div>
                         <div class="row">
                             <div class="col-sm-12">
-                                Todo
+                                <h6>
+                                    <span class="badge badge-success">Full Stack Web Developer</span> at
+                                    Queen's University, Kingston, Canada — <strong>Dec 2017 - Present</strong>
+                                </h6>
+                                <p class="light-text">Working on the development of new features, code review, testing
+                                    and improvement of the University Elentra Consortium OLMS - Elentra Platform.</p>
+                            </div>
+                        </div>
+                        <div class="small-clearfix"></div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h6>
+                                    <span class="badge badge-success">Full Stack Web Developer</span>
+                                    at IMD - UFRN, Natal, Brazil - <strong>Feb 2017 - Nov 2017</strong>
+                                </h6>
+                                <p class="light-text">
+                                    Developed new tools and features for the institute learning management system
+                                    (Moodle). Integrated new communications services for the institute public. And
+                                    Offered technical support for the institute platform users.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="small-clearfix"></div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h6>
+                                    <span class="badge badge-success">Dada Mining Developer Intern</span>
+                                    at IMD - UFRN, Natal, Brazil - <strong>Feb 2016 - Jan 2017</strong>
+                                </h6>
+                                <p class="light-text">
+                                    Efficiently analyzed and documented the data base structure of a self-education
+                                    online platform (Moodle). Successfully applied a process of sequential data mining
+                                    in order to discover behaviors patterns though the university online-learning
+                                    platform. Projected and implemented a software to track and identify the students
+                                    that were prone to quit education by the behaviors patterns found through the data mining
+                                    process.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="small-clearfix"></div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h6>
+                                    <span class="badge badge-success">Backend Web Developer</span>
+                                    at Mobister Tecnologia, Natal, Brazil  - <strong>Jul 2015 - Jan 2016</strong>
+                                </h6>
+                                <p class="light-text">
+                                    Successfully developed web applications using PHP with Zend, Phalcon and Laravel
+                                    frameworks, focusing in cover all the clients operational requirements with accuracy
+                                    and well planned work. Efficiently configured and applied maintenance to Unix servers,
+                                    with focus on scalability, safety and future upgrades. Worked on web applications
+                                    maintenance with integration testing, bug fixing and reporting.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="small-clearfix"></div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h6>
+                                    <span class="badge badge-success">Software Developer Intern</span>
+                                    at Vandrico Solutions Inc, Vancouver, Canada  - <strong>Jan 2015 - Apr 2015</strong>
+                                </h6>
+                                <p class="light-text">
+                                    Projected e implemented web and mobile applications related to wearable devices
+                                    tracking. Implemented new features for a tracking dashboard (web application) to
+                                    manage mobile and wearable devices. Efficiently deployed and tested applications in
+                                    smartwatches as one of the company products.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="small-clearfix"></div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h6>
+                                    <span class="badge badge-success">Full Stack Web Developer</span>
+                                    at Rits Comunicação e Tecnologia, Natal, Brazil  - <strong>Feb 2012 - Aug 2013</strong>
+                                </h6>
+                                <p class="light-text">
+                                    Provided maintenance for web applications with testing and bug fixing (PHP).
+                                    Successfully developed new web applications following the company projects
+                                    guidelines. Efficiently developed unity and integration tests for web application.
+                                    Developed continuous integration tools to speed the deploy of new features in web
+                                    applications.
+                                </p>
                             </div>
                         </div>
                     </div>

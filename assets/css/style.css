@@ -59,8 +59,7 @@
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #000;
-!important;
+    border-bottom: 1px solid #000 !important;
 }
 
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
