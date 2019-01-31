@@ -104,3 +104,7 @@ a.discreet-link-grey {
     font-size: 12pt;
     margin-bottom: 5px !important;
 }
+
+.card {
+    margin-bottom: 20px !important;
+}
