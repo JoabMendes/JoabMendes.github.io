@@ -1,7 +1,7 @@
 
 
 .clearfix {
-    height: 50px;
+    height: 25px;
 }
 
 .small-clearfix {
@@ -51,6 +51,24 @@
     padding-bottom: 0px;
 }
 
+a.discreet-link-black {
+    color: #2E2E2E;
+}
+
+a.discreet-link-grey {
+    color: #808080;
+}
+
+.contact-options a {
+    color: #bcbcbc;
+    text-decoration: none;
+    margin: 0px 15px 0px 15px;
+}
+
+.contact-options a:hover {
+    color: #2E2E2E;
+}
+
 /* Bootstrap overwrite */
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
@@ -84,4 +102,5 @@
 
 .badge {
     font-size: 12pt;
+    margin-bottom: 5px !important;
 }

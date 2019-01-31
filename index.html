@@ -29,9 +29,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
           integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
+
+    <script src="/assets/js/typedjs/lib/typed.min.js"></script>
+
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip();
+
+            var typed = new Typed('#title', {
+                strings: ["Hello there!^500", "I'm Joabe (:"],
+                typeSpeed: 50,
+                showCursor: false,
+            });
+
         });
     </script>
     <style>
@@ -56,15 +66,33 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="extra-padding">
-                        <h1 id="title">Hi, I'm Joabe (:</h1>
+                        <h1 id="title" alt="Hi, I'm Joabe (:" title="Hi, I'm Joabe (:"></h1>
                         <p id="presentation" class="light-text">
                             I'm <strong>web developer</strong>
                             currently based on <strong>Kingston, Canada</strong>. I enjoy creating outstanding online
-                            experiences for users through modern technologies, design, research and experimentation.
+                            experiences for users with modern technologies, research and experimentation.<br/>
                             I have been working on general web based solutions, hybrid mobile applications and
                             chatbots.
                         </p>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="text-center contact-options">
+                        <a href="mailto:joabe.mdl@gmail.com">
+                            <i class="fas fa-envelope-square"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/joabe-mendes-3b40b2a4/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/JoabMendes" target="_blank">
+                            <i class="fab fa-github-square"></i>
+                        </a>
+                        <a href="https://stackoverflow.com/users/2677101/joab-mendes?tab=profile" target="_blank">
+                            <i class="fab fa-stack-overflow"></i>
+                        </a>
+                    </h2>
                 </div>
             </div>
         </div>
@@ -77,15 +105,15 @@
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="skills-tab" data-toggle="tab" href="#skills" role="tab"
-                           aria-controls="home" aria-selected="true">Tech Skills</a>
+                           aria-controls="home" aria-selected="true">Skills</a>
                     </li>
                     <li class="nav-item experience-tab">
                         <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab"
                            aria-controls="profile" aria-selected="false">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                           aria-controls="contact" aria-selected="false">Contact</a>
+                        <a class="nav-link" id="projects-tab" data-toggle="tab" href="#projects" role="tab"
+                           aria-controls="projects" aria-selected="false">Projects</a>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
@@ -183,7 +211,9 @@
                             <div class="col-sm-12">
                                 <h6>
                                     <span class="badge badge-success">Full Stack Web Developer</span> at
-                                    Queen's University, Kingston, Canada — <strong>Dec 2017 - Present</strong>
+                                    <a href="https://queensu.ca" class="discreet-link-black" target="_blank">
+                                        Queen's University
+                                    </a>, Kingston, Canada — <strong>Dec 2017 - Present</strong>
                                 </h6>
                                 <p class="light-text">Working on the development of new features, code review, testing
                                     and improvement of the University Elentra Consortium OLMS - Elentra Platform.</p>
@@ -194,7 +224,9 @@
                             <div class="col-sm-12">
                                 <h6>
                                     <span class="badge badge-success">Full Stack Web Developer</span>
-                                    at IMD - UFRN, Natal, Brazil - <strong>Feb 2017 - Nov 2017</strong>
+                                    at <a href="https://www.imd.ufrn.br/portal/" class="discreet-link-black" target="_blank">
+                                        IMD - UFRN
+                                    </a>, Natal, Brazil — <strong>Feb 2017 - Nov 2017</strong>
                                 </h6>
                                 <p class="light-text">
                                     Developed new tools and features for the institute learning management system
@@ -207,8 +239,10 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <h6>
-                                    <span class="badge badge-success">Dada Mining Developer Intern</span>
-                                    at IMD - UFRN, Natal, Brazil - <strong>Feb 2016 - Jan 2017</strong>
+                                    <span class="badge badge-success">Data Mining Developer Intern</span>
+                                    at <a href="http://sedis.ufrn.br" class="discreet-link-black" target="_blank">
+                                        SEDIS - UFRN
+                                    </a>, Natal, Brazil — <strong>Feb 2016 - Jan 2017</strong>
                                 </h6>
                                 <p class="light-text">
                                     Efficiently analyzed and documented the data base structure of a self-education
@@ -225,7 +259,9 @@
                             <div class="col-sm-12">
                                 <h6>
                                     <span class="badge badge-success">Backend Web Developer</span>
-                                    at Mobister Tecnologia, Natal, Brazil  - <strong>Jul 2015 - Jan 2016</strong>
+                                    at <a href="https://www.mobister.com.br/" class="discreet-link-black" target="_blank">
+                                        Mobister Tecnologia
+                                    </a>, Natal, Brazil — <strong>Jul 2015 - Jan 2016</strong>
                                 </h6>
                                 <p class="light-text">
                                     Successfully developed web applications using PHP with Zend, Phalcon and Laravel
@@ -241,7 +277,9 @@
                             <div class="col-sm-12">
                                 <h6>
                                     <span class="badge badge-success">Software Developer Intern</span>
-                                    at Vandrico Solutions Inc, Vancouver, Canada  - <strong>Jan 2015 - Apr 2015</strong>
+                                    at <a href="https://vandrico.com/" class="discreet-link-black" target="_blank">
+                                        Vandrico Solutions Inc
+                                    </a>, Vancouver, Canada — <strong>Jan 2015 - Apr 2015</strong>
                                 </h6>
                                 <p class="light-text">
                                     Projected e implemented web and mobile applications related to wearable devices
@@ -256,7 +294,9 @@
                             <div class="col-sm-12">
                                 <h6>
                                     <span class="badge badge-success">Full Stack Web Developer</span>
-                                    at Rits Comunicação e Tecnologia, Natal, Brazil  - <strong>Feb 2012 - Aug 2013</strong>
+                                    at <a href="https://rits.com.br/" class="discreet-link-black" target="_blank">
+                                        Rits Comunicação e Tecnologia
+                                    </a>, Natal, Brazil — <strong>Feb 2012 - Aug 2013</strong>
                                 </h6>
                                 <p class="light-text">
                                     Provided maintenance for web applications with testing and bug fixing (PHP).
@@ -267,8 +307,33 @@
                                 </p>
                             </div>
                         </div>
+                        <div class="small-clearfix"></div>
+                        <h5>Education:</h5>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h6>
+                                    <span class="badge badge-warning">Analysis and Development of Systems</span>
+                                    at IFRN, Natal, Brazil — <strong>2012 - Aug 2016</strong>
+                                </h6>
+                                <p class="light-text">
+                                    Bachelor  of Technology in Computer Science program with extra emphasis in software
+                                    processes and project management.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h6>
+                                    <span class="badge badge-warning">Computer Science</span>
+                                    at Langara College, Vancouver, Canada — <strong>2013 - 2015</strong>
+                                </h6>
+                                <p class="light-text">
+                                    Awarded with the scholarship exchange program: Science without Borders.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
                         <div class="small-clearfix"></div>
                         <div class="row">
                             <div class="col-sm-12">
